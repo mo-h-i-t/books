@@ -1,0 +1,160 @@
+
+.modle{
+    margin-top: 7%;
+}
+body{  
+
+    /* background-image: image-set("backpapger.png"); */
+    background-image: linear-gradient(to right, red, green, blue);
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+}
+.hello{
+    text-shadow: red;
+}
+
+.modal-content{
+
+    background-color: rgba(233, 158, 245, 0.235);
+    
+    
+    margin: 5px;
+    border:2px  groove blue ;
+    width: 50%;
+    height: 40%;
+    box-shadow: 0 0 20px dodgerblue;
+
+}
+
+
+.close:hover,
+.close:focus{
+    color: red;
+    cursor: pointer;
+
+}
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+@keyframes animatezoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.AVATAR {
+     
+
+
+
+    border-radius: 100%;
+    padding-left: 35%;
+    padding-right: 35%;
+
+
+}
+.AVATAR2{
+    border-radius:100% ;
+}
+
+
+/* Basic styling for the input */
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+    
+    /* Styling when the input is focused */
+    input[type="text"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: rgb(255, 255, 0); /* Change border color on focus */
+    box-shadow: 0 0 20px rgb(255, 255, 0); 
+    background-color: yellow;/* Add a subtle box-shadow on focus */
+    }
+    
+    /* Example of changing background color on hover */
+    input[type="text"]:hover {
+        background-color: rgb(115, 113, 248);
+        box-shadow: 0 0 20px rgb(43, 0, 255); 
+    }
+    input[type="password"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+        
+        /* Styling when the input is focused */
+        input[type="password"]:focus {
+        outline: none; /* Remove default focus outline */
+        border-color: rgb(255, 30, 30); /* Change border color on focus */
+        box-shadow: 0 0 20px rgb(255,30,30);
+        background-color: pink; /* Add a subtle box-shadow on focus */
+        }
+        
+        /* Example of changing background color on hover */
+        input[type="password"]:hover {
+        background-color: rgb(115, 113, 248);
+        box-shadow: 0 0 20px rgb(43, 0, 255); 
+
+        
+        }
+        .bot{
+            padding: 5px;
+            border: 1px;
+            font-size: 12px;
+        
+
+                background-color: rgba(255, 192, 192, 0.564);
+            
+        }
+        .bot:hover{
+            padding: 5px;
+            border: 1px;
+            font-size: 12px;
+        
+
+                background-color: rgba(224, 255, 192, 0.564);
+                box-shadow:0 0 20px rgb(165, 255, 30); 
+                
+        }
+
+.vl {
+            border-left: 6px solid green;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+
+}
+.container{
+    text-align: center;
+}
+.NCERT{
+
+    display: block;
+    border:  5px  solid#ccc;
+    background-color: white;
+    width: 20%;
+    height: inherit;
+    margin-left: 10%;
+    
+
+    
+}
+.RSAGGRAL{
+    display: inline-block;
+    border:  5px  solid#ccc;
+    background-color: white;
+    width: 20%;
+    height: inherit;
+
+}
+
