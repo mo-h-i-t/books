@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    font-family: Arial;
+    border:border-box ;
+}
+.uper{
+    display: flex;
+    background-color: black;
+    width: auto;
+    height: 60px;
+
+}
+.logo{
+    display: flex;
+    width: 10%;
+}
+.search{
+    height: 10px;
+    margin-left: 50px;
+}
+.ncertmath{
+
+    display: block;
+    
+    
+    width: 20%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color:white;
+    
+    
+    
+    }
+    .ncertmath:hover{
+    
+    display: block;
+    
+    
+    width: 20%;
+    height: inherit;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: chartreuse;
+    
+    
+    
+}
+    .ncertscince{
+    display: inline-block;
+    
+    background-color:white;
+    width: 20%;
+    height: inherit;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+    .ncertscince:hover{
+    display: inline-block;
+    
+    background-color:crimson;
+    width: 20%;
+    height: inherit;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+.rdshrama{
+    display: inline-block;
+    
+    background-color:white;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+    .rdshrama:hover{
+    display: inline-block;
+    
+    background-color:blue;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+    .schrand{
+    display: inline-block;
+    
+    background-color:white;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+    .schrand:hover{
+    display: inline-block;
+    
+    background-color:yellow;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.rsaggral{
+    display: inline-block;
+    
+    background-color:white;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+    .rsaggral:hover{
+    display: inline-block;
+    
+    background-color:yellow;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.other{
+    display: inline-block;
+    background-color:white;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.other:hover{
+    display: inline-block;
+    
+    background-color:yellow;
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+}

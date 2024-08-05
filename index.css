@@ -1,20 +1,20 @@
 .modle{
-    margin-top: 7%;
-}
-body{  
+    margin-top: 5% ;
 
-    /* background-image: image-set("backpapger.png"); */
-    background-image: linear-gradient(to right, red, green, blue);
-    /* background-repeat: no-repeat; */
-    background-size: auto;
+    
+    
+
 }
-.hello{
-    text-shadow: red;
+body{
+        /* background-image: image-set("backpapger.png"); */
+        background-image: linear-gradient(to right, rgba(255, 245, 245, 0), black );
+        /* background-repeat: no-repeat; */
+     
 }
 
 .modal-content{
 
-    background-color: rgba(233, 158, 245, 0.235);
+    background-image: linear-gradient(to top, green, white, red);
     
     
     margin: 5px;
@@ -56,9 +56,7 @@ body{
 
 
 }
-.AVATAR2{
-    border-radius:100% ;
-}
+
 
 
 /* Basic styling for the input */
@@ -66,7 +64,7 @@ input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     }
     
     /* Styling when the input is focused */
@@ -86,7 +84,7 @@ input[type="text"] {
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 14px;
         }
         
         /* Styling when the input is focused */
@@ -107,19 +105,21 @@ input[type="text"] {
         .bot{
             padding: 5px;
             border: 1px;
-            font-size: 12px;
-        
+            width: 20%;
+            height: 7%;
+            right: 90%;
 
-                background-color: rgba(255, 192, 192, 0.564);
+            background-color: rgba(255, 192, 192, 0.564);
             
         }
         .bot:hover{
             padding: 5px;
             border: 1px;
-            font-size: 12px;
+            width: 20%;
+            height: 7%;
         
 
-                background-color: rgba(224, 255, 192, 0.564);
+                background-color:  green;
                 box-shadow:0 0 20px rgb(165, 255, 30); 
                 
         }
@@ -136,24 +136,3 @@ input[type="text"] {
 .container{
     text-align: center;
 }
-.NCERT{
-
-    display: block;
-    border:  5px  solid#ccc;
-    background-color: white;
-    width: 20%;
-    height: inherit;
-    margin-left: 10%;
-    
-
-    
-}
-.RSAGGRAL{
-    display: inline-block;
-    border:  5px  solid#ccc;
-    background-color: white;
-    width: 20%;
-    height: inherit;
-
-}
-
