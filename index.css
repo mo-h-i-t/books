@@ -64,7 +64,7 @@ input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
     }
     
     /* Styling when the input is focused */
@@ -84,7 +84,7 @@ input[type="text"] {
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 12px;
         }
         
         /* Styling when the input is focused */
