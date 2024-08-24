@@ -1,36 +1,21 @@
-.modle{
-    margin-top: 5% ;
 
-    
-    
-
-}
 body{
-        /* background-image: image-set("backpapger.png"); */
-        background-image: linear-gradient(to right, rgba(255, 245, 245, 0), black );
-        /* background-repeat: no-repeat; */
-     
+    background-image: linear-gradient(to left, black ,rgba(255, 255, 255, 0));
 }
-
+/* .modal{
+    display: auto;
+    width: auto;
+    height: auto ;
+} */
 .modal-content{
-
-    background-image: linear-gradient(to top, green, white, red);
-    
-    
-    margin: 5px;
-    border:2px  groove blue ;
+    display: block;
+    border: 2px solid pink;
+    border-radius: 40px;
     width: 50%;
     height: 40%;
-    box-shadow: 0 0 20px dodgerblue;
-
-}
-
-
-.close:hover,
-.close:focus{
-    color: red;
-    cursor: pointer;
-
+    margin-top: 10%;
+    box-shadow: 0 0 60px red;
+    background-image: linear-gradient(to right,rgb(46, 42, 42) ,rgb(255, 255, 255));
 }
 .animate{
     -webkit-animation: animatezoom 0.6s;
@@ -44,95 +29,68 @@ body{
     from{transform: scale(0);}
     to{transform: scale(1);}
 }
-
-.AVATAR {
-     
-
-
-
-    border-radius: 100%;
-    padding-left: 35%;
-    padding-right: 35%;
-
-
-}
-
-
-
 /* Basic styling for the input */
-input[type="text"] {
+input[type="password"] {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc00;
     border-radius: 5px;
     font-size: 12px;
-    }
+}
     
     /* Styling when the input is focused */
-    input[type="text"]:focus {
+input[type="password"]:focus {
     outline: none; /* Remove default focus outline */
     border-color: rgb(255, 255, 0); /* Change border color on focus */
-    box-shadow: 0 0 20px rgb(255, 255, 0); 
+    box-shadow: 0 0 40px rgb(255, 255, 0); 
     background-color: yellow;/* Add a subtle box-shadow on focus */
-    }
+}
     
     /* Example of changing background color on hover */
-    input[type="text"]:hover {
+input[type="password"]:hover {
         background-color: rgb(115, 113, 248);
-        box-shadow: 0 0 20px rgb(43, 0, 255); 
-    }
-    input[type="password"] {
+        box-shadow: 0 0 40px rgb(43, 0, 255); 
+}
+
+input[type="text"] {
         padding: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #cccccc00;
         border-radius: 5px;
         font-size: 12px;
-        }
+}
         
         /* Styling when the input is focused */
-        input[type="password"]:focus {
+input[type="text"]:focus {
         outline: none; /* Remove default focus outline */
-        border-color: rgb(255, 30, 30); /* Change border color on focus */
-        box-shadow: 0 0 20px rgb(255,30,30);
-        background-color: pink; /* Add a subtle box-shadow on focus */
-        }
+        border-color: rgb(83, 255, 30); /* Change border color on focus */
+        box-shadow: 0 0 40px rgba(119, 253, 2, 0.959);
+        background-color:green; /* Add a subtle box-shadow on focus */
+}
         
         /* Example of changing background color on hover */
-        input[type="password"]:hover {
+input[type="text"]:hover {
         background-color: rgb(115, 113, 248);
-        box-shadow: 0 0 20px rgb(43, 0, 255); 
+        box-shadow: 0 0 40px rgb(43, 0, 255); 
 
         
-        }
-        .bot{
-            padding: 5px;
-            border: 1px;
-            width: 20%;
-            height: 7%;
-            right: 90%;
-
-            background-color: rgba(255, 192, 192, 0.564);
-            
-        }
-        .bot:hover{
-            padding: 5px;
-            border: 1px;
-            width: 20%;
-            height: 7%;
-        
-
-                background-color:  green;
-                box-shadow:0 0 20px rgb(165, 255, 30); 
-                
-        }
-
-.vl {
-            border-left: 6px solid green;
-            height: 500px;
-            position: absolute;
-            left: 50%;
-            margin-left: -3px;
-            top: 0;
-
 }
+.bot{
+    margin: 5px;
+    border: 1px;
+    border-radius: 20px;
+    width: 20%;
+    height: 7%;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: rgba(90, 145, 54, 0.363);
+    box-shadow: 0 0 40px green;
+    padding: 5px;
+    box-sizing: border-box ;
+            
+}
+
 .container{
     text-align: center;
+    border: none;
+    background-color: #cccccc00;
 }
+   
