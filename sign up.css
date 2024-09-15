@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+body{
+    background-image: linear-gradient(to right, red ,chartreuse);
+    
+}
+header{
+    display: flex;
+    background-color: transparent;
+    width: auto;
+    height: 30px fit-content;
+    margin-top: 5px;
+
+}
+.link{
+    text-decoration: none;
+    margin-left: 200px;
+    color: black;
+    
+
+}
+a {
+    text-decoration: none; /* Remove underline by default */
+    color: black; /* Optional: Set the link color */
+    position: relative; /* Needed for the pseudo-element */
+    color: #000;
+}
+
+a::after {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    left: 0;
+    bottom: -2px; /* Position the underline just below the text */
+    transition: width 0.4s ease; /* Animation effect */
+    color: #000;
+}
+
+a:hover::after {
+    width: 120%; /* On hover, the underline expands to the full width */
+    color: #000;
+}
+.page{
+    display:block ;
+    
+    border:none;
+    color: #000;
+    width: 450px;
+    height: 350px;
+    background-color:rgba(5, 105, 255, 0.34) ;
+    margin-right: 400px;
+    margin-top: 100px;
+    
+}
+.page1{
+    display:block ;
+    align-items: right;
+    border: none;    
+    
+    width: 300px;
+    height: 350px;
+    background-color:  #f5f5f54e;
+    margin-left: 350px;
+    margin-top:-350px ;
+}
+ .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+
+}
+.inputBox{
+    text-decoration: none; /* Remove underline by default */
+    color: black; /* Optional: Set the link color */
+    position: relative; /* Needed for the pseudo-element */
+}
+.inputBox::after {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    left: 0;
+    bottom: -2px; /* Position the underine just below the text */
+    transition: width 1.5s ease; /* Animation effect */
+    background: green;
+}
+
+.inputBox:hover::after {
+    width: 100%; /* On hover, the underline expands to the full width */
+    background-color: chartreuse;
+    box-shadow: 0 0 50px;
+    
+}
+#text{
+    margin-top: 15px;
+
+}
+#up{
+    margin-top: 5px;
+}
+ input[type="submit"]
+{
+  padding: 10px;
+  background: rgba(0, 255, 0, 0);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:hover
+{
+  opacity: 0.6;
+  background-color: chartreuse;
+  box-shadow: 0 0 50px;
+}

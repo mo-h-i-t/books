@@ -1,96 +1,182 @@
-
-body{
-    background-image: linear-gradient(to left, black ,rgba(255, 255, 255, 0));
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
-/* .modal{
-    display: auto;
-    width: auto;
-    height: auto ;
-} */
-.modal-content{
-    display: block;
-    border: 2px solid pink;
-    border-radius: 40px;
-    width: 50%;
-    height: 40%;
-    margin-top: 10%;
-    box-shadow: 0 0 60px red;
-    background-image: linear-gradient(to right,rgb(46, 42, 42) ,rgb(255, 255, 255));
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
 }
-.animate{
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+section 
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-@-webkit-keyframes animatezoom {
-    from{-webkit-transform: scale(0);}
-    to{-webkit-transform: scale(1);}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,#0f0,#000);
+  animation: animate 5s linear infinite;
 }
-@keyframes animatezoom {
-    from{transform: scale(0);}
-    to{transform: scale(1);}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
 }
-/* Basic styling for the input */
-input[type="password"] {
-    padding: 5px;
-    border: 1px solid #cccccc00;
-    border-radius: 5px;
-    font-size: 12px;
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(5.25vw - 2px);
+  height: calc(5.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
 }
-    
-    /* Styling when the input is focused */
-input[type="password"]:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: rgb(255, 255, 0); /* Change border color on focus */
-    box-shadow: 0 0 40px rgb(255, 255, 0); 
-    background-color: yellow;/* Add a subtle box-shadow on focus */
-}
-    
-    /* Example of changing background color on hover */
-input[type="password"]:hover {
-        background-color: rgb(115, 113, 248);
-        box-shadow: 0 0 40px rgb(43, 0, 255); 
-}
-
-input[type="text"] {
-        padding: 5px;
-        border: 1px solid #cccccc00;
-        border-radius: 5px;
-        font-size: 12px;
-}
-        
-        /* Styling when the input is focused */
-input[type="text"]:focus {
-        outline: none; /* Remove default focus outline */
-        border-color: rgb(83, 255, 30); /* Change border color on focus */
-        box-shadow: 0 0 40px rgba(119, 253, 2, 0.959);
-        background-color:green; /* Add a subtle box-shadow on focus */
-}
-        
-        /* Example of changing background color on hover */
-input[type="text"]:hover {
-        background-color: rgb(115, 113, 248);
-        box-shadow: 0 0 40px rgb(43, 0, 255); 
-
-        
-}
-.bot{
-    margin: 5px;
-    border: 1px;
-    border-radius: 20px;
-    width: 20%;
-    height: 7%;
-    margin-left: 50px;
-    margin-top: 20px;
-    background-color: rgba(90, 145, 54, 0.363);
-    box-shadow: 0 0 40px green;
-    padding: 5px;
-    box-sizing: border-box ;
-            
+section span:hover 
+{
+  background: #0f0;
+  transition: -1s;
 }
 
-.container{
-    text-align: center;
-    border: none;
-    background-color: #cccccc00;
+section .signin
+{
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
 }
-   
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #0f0;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0f0;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
