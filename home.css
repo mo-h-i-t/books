@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: inherit;
+}
+body{
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+}
+header{
+    display: flex;
+    height: 60px;
+    width: auto;
+    background-color: yellow;
+    margin:auto ;
+    padding: auto;
+
+}
+#img1{
+    display: flex;
+    width: 50px;
+    height: 60px;
+    
+}
+#img2{
+    display: flex;
+    width: auto;
+    height: 60px;
+}
+.scrollable {
+    width: auto;
+    height: 525px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow-y: scroll; /* Vertical scrollbar */
+    overflow-x: hidden; /* No horizontal scrollbar */
+    
+}
+.main{
+    display: block;
+    width: auto;
+    height: auto;
+    
+
+}
+.ad{
+    display: flex;
+    width: 850px;
+    height: 475px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: chartreuse;
+}
+.search-box{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(245, 245, 220, 0.463);
+    border: 1px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.search-box input[type="text"] {
+    display: flex;
+    width: 450px  ;
+    height: 40px;
+    background-color: transparent;
+    border:1px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.Math{
+    display: flex;
+    width: 1200px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.scrollbox-math {
+    display: inline-flex;
+    width: 1200px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow-y: hidden; /* Vertical scrollbar */
+    overflow-x: scroll ; /* No horizontal scrollbar */
+    
+}
+.scrollbox-scince {
+    display: inline-flex;
+    width: 1200px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow-y: hidden; /* Vertical scrollbar */
+    overflow-x: scroll ; /* No horizontal scrollbar */
+    
+}
+
+.ncert{
+    display: block;
+    width: 300px;
+    height: 375px;
+    border:  solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    background-color: rgba(237, 237, 63, 0);
+}
+.img3 {
+    display: block;
+    width: 275px;
+    height: 250px;
+    margin-left: 14px;
+    border-radius: 50px;
+    text-decoration:transparent;  
+}
+h3{
+    margin-left: 50px;
+}
