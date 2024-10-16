@@ -1,1 +1,0 @@
-alert ("hy mohit kumar");
