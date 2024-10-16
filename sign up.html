@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="sign up.css">
 </head>
 <body>
+    <script>
+        // Array of colors to cycle through
+        const colors = [ '#ffffff'];
+        let currentIndex = 0;
+    
+        // Function to change the background color
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length; // Cycle through the colors
+        }
+    
+        // Change background color every 5 seconds
+        setInterval(changeBackgroundColor, 5000);
+    </script>
     <header>
         <a href="sign up.html" class="link">Registration</a>
 
@@ -47,20 +61,20 @@
   
         <div class="inputBox"> 
   
-         <input type="password" placeholder="Password" required > </i> 
+         <input type="password" placeholder="Password" required  style="color:  #000;;"> </i> 
   
         </div> 
         <div class="inputBox"> 
   
-            <input type="digit" placeholder="PH. Number" required id="password"> </i> 
+            <input type="digit" placeholder="PH. Number" required id="password" style="color: black;"> </i> 
      
            </div> 
         <div class="inputBox"> 
   
-            <input type="digit" placeholder="OTP" required id="password"> </i> 
+            <input type="digit" placeholder="OTP" required id="password" style="color: #000;"> </i> 
      
         </div> 
-        <form action="type.html">
+        <form action="index.html">
             <div class="inputBox"> 
     
                 <input type="submit" value="Registration"> 
