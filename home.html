@@ -1,175 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
-    <header>
-         <img src="logo.png" alt="">
-         <img src="write.png" alt="">
-    </header>
-    <div class="scrollable">
-
-        <div class="ad">
-
-            <img src="Library.png" width="850px" height="475px" style="border-radius:50px ;">
-
-        </div>
-
-        <div class="find-box">
-
-            <div class="mic">
-
-                <h1>
-
-                    Speack Now
-
-                </h1>
-
-            </div>
-
-            <div class="search-box">
-
-              <form action="/search" method="GET">
-
-                 <input type="text" name="query" placeholder="Search..." style="width: 275px; height: 50px; border-radius: 50px; border:none;" >
-
-                 <button type="submit" style="height: auto; width: 50px;">Search</button>
-
-              </form>
-
-            </div>
-
-            <div class="image-push">
-
-                <h1>
-
-                    Book Image 
-
-                </h1>
-
-            </div>
-
-        </div>
-        <marquee behavior="" direction=""><h1>CLASS NAME</h1></marquee>
-
-        <div id="container">
-
-
-
-            <a href="math.html" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">6</h1>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">7</h1>
-
-                    </div>
-                    
-                </div>
-
-            </a>
-
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">8</h1>
-
-                    </div>
-                    
-                </div>
-
-            </a>
-
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">9</h1>
-
-                    </div>
-                    
-                </div>
-                
-
-            </a>
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">10</h1>
-
-                    </div>
-                    
-                </div>
-
-            </a>
-
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">11</h1>
-
-                    </div>
-                    
-                </div>
-
-            </a>
-
-            <a href="#" >
-
-                    
-                <div class="button-main">
-
-                    <div class="button-inside">
-
-                      <h1 class="h1">12</h1>
-
-                    </div>
-                    
-                </div>
-
-            </a>
-
-
-
-        </div>
-
-
+<html>
+ <head>
+  <title>
+   Wiley Online Library
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-white shadow">
+   <div class="flex items-center">
+    <img alt="Wiley logo" class="h-8" height="50" src="write.png" width="100"/>
+    <span class="ml-2 text-xl font-bold">
+     Online Library
+    </span>
+   </div>
+   <div>
+    <a class="text-blue-600" href="#">
+     Login / Register
+    </a>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative">
+   <img alt="Close-up of a hand holding a small plant in soil" class="w-full h-96 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/JZ0BCeICYGzPZqjex9tNdv6M2eGE5BW8puJrSBxnAjFvduOnA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4">
+    <p class="text-lg">
+     Accelerating research discovery to shape a better future
+    </p>
+    <h1 class="text-4xl font-bold mt-2" style="color: black;">
+     Today's research, tomorrow's innovation
+    </h1>
+    <div class="mt-4 flex items-center w-full max-w-lg">
+     <input class="w-full p-2 rounded-l-md" placeholder="Search publications, articles, keywords, etc." type="text" style="color: black;"/>
+     <button class="bg-blue-600 p-2 rounded-r-md">
+      <i class="fas fa-search text-white">
+      </i>
+     </button>
     </div>
-</body>
+    <a class="mt-2 text-sm" href="#">
+     Advanced Search
+    </a>
+   </div>
+  </section>
+  <!-- Info Section -->
+  <section class="bg-white py-4">
+   <div class="flex justify-around text-center">
+    <div>
+     <p class="text-lg font-bold">
+      1,900+ Journals
+     </p>
+    </div>
+    <div>
+     <p class="text-lg font-bold">
+      260+ Reference Works
+     </p>
+    </div>
+    <div>
+     <p class="text-lg font-bold">
+      27,000+ Online Books
+     </p>
+    </div>
+   </div>
+  </section>
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Resources</h1>
+    <div class="grid grid-cols-4 gap-4 mb-8">
+        <div>
+            <h2 class="text-lg font-bold text-blue-800 mb-2">Researchers</h2>
+            <ul class="space-y-1">
+                <li>Register online</li>
+                <li>Access options</li>
+                <li>Find training and resources</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-lg font-bold text-blue-800 mb-2">Librarians</h2>
+            <ul class="space-y-1">
+                <li>Manage your account</li>
+                <li>View products and solutions</li>
+                <li>Find training and support</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-lg font-bold text-blue-800 mb-2">Societies</h2>
+            <ul class="space-y-1">
+                <li>Publish with Wiley</li>
+                <li>Learn about trends</li>
+                <li>Societies Resources Hub</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-lg font-bold text-blue-800 mb-2">Authors</h2>
+            <ul class="space-y-1">
+                <li>Submit a paper</li>
+                <li>Track your article</li>
+                <li>Learn about Open Access</li>
+            </ul>
+        </div>
+    </div>
+
+ </body>
 </html>
