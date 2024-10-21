@@ -14,7 +14,7 @@ function changeColor() {
 }
 
 // Change color every second (1000 milliseconds)
-setInterval(changeColor, 5000);
+setInterval(changeColor, 100);
 
 // Initial color change
 changeColor();
